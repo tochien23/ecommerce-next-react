@@ -35,6 +35,7 @@ const RecursiveListItems: NextPage<TListItems> = ({items, level, openItems, setO
             }));
         }
     };
+    
     return (
         <>
             {items?.map((item: any) => {

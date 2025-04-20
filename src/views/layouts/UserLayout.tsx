@@ -24,28 +24,6 @@ const UserLayout: NextPage<TProps> = ({children}) => {
   };
 
   return (
-    // <Box sx={{ display: 'flex' }}>
-    //   <CssBaseline />
-    //   <HorizontalLayout toggleDrawer={toggleDrawer} open={open} />
-    //   <VerticalLayout toggleDrawer={toggleDrawer} open={open} />
-    //   <Box
-    //     component="main"
-    //     sx={{
-    //       backgroundColor: (theme) =>
-    //         theme.palette.mode === 'light'
-    //           ? theme.palette.grey[100]
-    //           : theme.palette.grey[900],
-    //       flexGrow: 1,
-    //       height: '100vh',
-    //       overflow: 'auto',
-    //     }}
-    //   >
-    //     <Toolbar />
-    //     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-    //       {children}
-    //     </Container>
-    //   </Box>
-    // </Box>
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <HorizontalLayout toggleDrawer={toggleDrawer} open={open} />

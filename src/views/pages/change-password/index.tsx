@@ -56,9 +56,6 @@ const ChangePasswordPage: NextPage<TProps> = () => {
     // ** Translation
     const { t } = useTranslation();
 
-    // ** Router
-    const router = useRouter();
-
     // ** Auth  
     const {logout} = useAuth();
 

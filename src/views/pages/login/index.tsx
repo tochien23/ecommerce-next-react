@@ -55,7 +55,7 @@ const LoginPage: NextPage<TProps> = () => {
         password: yup.string().required("The field is required").matches(PASSWORD_REG, "Password is not valid").min(6, "Password must be at least 6 characters").max(20, "Password must be at most 20 characters")
     })
     .required()
-    const { handleSubmit, control, formState: {errors}, setError } = useForm({
+    const { handleSubmit, control, formState: {errors} } = useForm({
         defaultValues: {
             email: '',
             password: ''
@@ -73,6 +73,7 @@ const LoginPage: NextPage<TProps> = () => {
             })
         }
     }
+
     return (
         <Box sx={{
             height: "100vh",

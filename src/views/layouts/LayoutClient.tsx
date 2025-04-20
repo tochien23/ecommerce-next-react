@@ -19,6 +19,7 @@ type TProps = {
 
 const LayoutClient: NextPage<TProps> = ({ children }) => {
   const theme = useTheme();
+  
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
