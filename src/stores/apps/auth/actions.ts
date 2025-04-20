@@ -12,6 +12,7 @@ export const registerAuthAsync = createAsyncThunk(
     if (response?.data) {
       return response
     }
+    
     return {
       data: null,
       message: response?.response?.data?.message,

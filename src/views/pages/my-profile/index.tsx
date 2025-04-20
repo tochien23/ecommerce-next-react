@@ -33,7 +33,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from 'src/stores';
 import { resetInitialState } from 'src/stores/apps/auth';
 import { updateAuthMeAsync } from 'src/stores/apps/auth/actions';
-import FallbackSpinner from 'src/components/fall-back';
 
 // ** Other Imports
 import toast from 'react-hot-toast';
@@ -140,7 +139,6 @@ const MyProfilePage: NextPage<TProps> = () => {
             middleName: middleName,
             lastName: lastName,
             address: data.address,
-            // city: data.city,
             phone: data.phone,
             role: roleId,
             avatar: avatar || undefined
