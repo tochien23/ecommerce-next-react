@@ -16,5 +16,3 @@ const MyProfile:NextPage<TProps> = () => {
 
 export default MyProfile;
 MyProfile.getLayout = (page: ReactNode) => <LayoutClient>{page}</LayoutClient>
-
-
